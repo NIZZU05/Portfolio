@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-background: #ffffff;
+  --color-foreground: #0c0c0c;
+  
+  --color-accent: #8b5cf6;
+  --color-accent-foreground: #ffffff;
+
+  --color-card: rgba(255, 255, 255, 0.7);
+  --color-card-foreground: #0c0c0c;
+  
+  --color-border: rgba(0, 0, 0, 0.1);
+}
+
+.dark {
+  --color-background: #0c0c0c;
+  --color-foreground: #f5f5f5;
+  
+  --color-card: rgba(20, 20, 20, 0.7);
+  --color-card-foreground: #f5f5f5;
+  
+  --color-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans transition-colors duration-300;
+    cursor: none;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-md bg-card border border-border shadow-lg;
+  }
+  
+  .glass-hover {
+    @apply transition-all duration-300 hover:bg-white/10 dark:hover:bg-white/5 hover:backdrop-blur-xl hover:border-accent/50 hover:shadow-accent/20;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-purple-400;
+  }
+}
+
+/* Custom Cursor Styles */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-ring {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, border-width 0.3s;
+}
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+  .cursor-dot, .cursor-ring {
+    display: none;
+  }
+}
