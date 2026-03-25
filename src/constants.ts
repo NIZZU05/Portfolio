@@ -32,7 +32,7 @@ export const personalInfo = {
 export const socials = [
   {
     name: "GitHub",
-    url: "https://github.com/NizzuM",
+    url: "https://github.com/NIZZU05",
     icon: Github,
   },
   {
@@ -70,7 +70,7 @@ export const projects = [
     description: "A portable real-time signal monitoring system using ESP32 with built-in 12-bit ADC. Features WebSocket-based data streaming for low-latency communication and a browser-based dashboard for live visualization. Research findings and system architecture are documented in an upcoming IEEE conference paper (Publication Pending).",
     tags: ["ESP32", "WebSockets", "Chart.js", "C++"],
     thumbnailUrl: "https://lh3.googleusercontent.com/d/1-BgJZ8yEB0Xo9t9zRWp-GAnX1Y-CWUhc",
-    githubUrl: "https://github.com/NizzuM",
+    githubUrl: "https://github.com/NIZZU05",
     liveUrl: "#",
     category: "IoT",
     hideLinks: true,
@@ -80,7 +80,7 @@ export const projects = [
     description: "Built a predictive machine learning model for cervical cancer detection using structured healthcare datasets. Achieved 88% accuracy using supervised learning algorithms.",
     tags: ["ML", "Python", "TensorFlow", "Scikit-Learn"],
     thumbnailUrl: "https://lh3.googleusercontent.com/d/1qvQCPU53TubXSFu_mJaKc0ATJ8swMwel",
-    githubUrl: "https://github.com/NizzuM",
+    githubUrl: "https://github.com/NIZZU05",
     liveUrl: "https://colab.research.google.com/drive/1imuF-sQKZ05RB8PCYYB_8qqtMsCrUI_9#scrollTo=1de8d154",
     category: "AI/ML",
   },
@@ -89,7 +89,7 @@ export const projects = [
     description: "Developed an IoT-based warehouse monitoring system for Ice City Refrigeration to track electrical and environmental parameters in real time. This industrial-grade solution integrates sensor networks with cloud data logging. A research paper detailing the implementation and data analysis is set for IEEE publication soon.",
     tags: ["IoT", "Data Visualization", "Sensors"],
     thumbnailUrl: "https://lh3.googleusercontent.com/d/1fiIHYmGV1hS6Dvz3ODNCTogCFiyabmtK",
-    githubUrl: "https://github.com/NizzuM",
+    githubUrl: "https://github.com/NIZZU05",
     liveUrl: "#",
     category: "IoT + Web",
     hideLinks: true,
