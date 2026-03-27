@@ -37,27 +37,21 @@ const About = () => {
               {personalInfo.about}
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {['Languages', 'Frameworks', 'AI/ML', 'Databases'].map((cat) => (
-                <div key={cat}>
-                  <h3 className="text-sm font-bold uppercase tracking-widest text-accent mb-4">
-                    {cat}
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {skills
-                      .filter((s) => s.category === cat)
-                      .map((skill) => (
-                        <span
-                          key={skill.name}
-                          className="px-3 py-1 rounded-full glass text-xs font-medium flex items-center gap-2"
-                        >
-                          <skill.icon size={14} />
-                          {skill.name}
-                        </span>
-                      ))}
-                  </div>
-                </div>
-              ))}
+            <div className="mt-10">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-accent mb-6">
+                TECHNICAL SKILLS
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {skills.map((skill) => (
+                  <span
+                    key={skill.name}
+                    className="px-4 py-2 rounded-xl glass text-sm font-medium flex items-center gap-2 border border-foreground/5 hover:border-accent/30 transition-colors"
+                  >
+                    <skill.icon size={16} className="text-accent" />
+                    {skill.name}
+                  </span>
+                ))}
+              </div>
             </div>
           </motion.div>
         </div>

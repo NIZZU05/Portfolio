@@ -48,20 +48,20 @@ export const socials = [
 ];
 
 export const skills = [
-  { name: "Python", category: "Languages", icon: Terminal },
-  { name: "JavaScript", category: "Languages", icon: Code2 },
-  { name: "C++", category: "Languages", icon: Code2 },
-  { name: "SQL", category: "Languages", icon: Database },
-  { name: "Node.js", category: "Frameworks", icon: Globe },
-  { name: "Express.js", category: "Frameworks", icon: Globe },
-  { name: "React", category: "Frameworks", icon: Globe },
-  { name: "TensorFlow", category: "AI/ML", icon: BrainCircuit },
-  { name: "Keras", category: "AI/ML", icon: BrainCircuit },
-  { name: "IoT Systems", category: "Core", icon: Cpu },
-  { name: "Data Processing", category: "Core", icon: BarChart3 },
-  { name: "MongoDB", category: "Databases", icon: Database },
-  { name: "Firebase", category: "Databases", icon: Database },
-  { name: "Supabase", category: "Databases", icon: Database },
+  { name: "Python", icon: Terminal },
+  { name: "JavaScript", icon: Code2 },
+  { name: "C++", icon: Code2 },
+  { name: "SQL", icon: Database },
+  { name: "Node.js", icon: Globe },
+  { name: "Express.js", icon: Globe },
+  { name: "React", icon: Globe },
+  { name: "TensorFlow", icon: BrainCircuit },
+  { name: "Keras", icon: BrainCircuit },
+  { name: "IoT Systems", icon: Cpu },
+  { name: "Data Processing", icon: BarChart3 },
+  { name: "MongoDB", icon: Database },
+  { name: "Firebase", icon: Database },
+  { name: "Supabase", icon: Database },
 ];
 
 export const projects = [
