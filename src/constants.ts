@@ -26,7 +26,7 @@ export const personalInfo = {
   about: "Computer Science undergraduate specializing in Machine Learning, IoT systems, and full-stack development. Experienced in developing real-time monitoring systems, predictive models, and scalable backend applications using Python, Node.js, and cloud-integrated databases. Currently a Research Intern at Universiti Malaysia Perlis (UniMAP), contributing to data-driven system design and applied research.",
   photoUrl: "https://lh3.googleusercontent.com/d/1RBcASW0vYhnZX8vLVra8uw4hhmSSKGDJ", // User's uploaded photo
   email: "nizzukhan5049@gmail.com",
-  resumeUrl: "/resume.pdf", // Updated for the attached file
+  resumeUrl: "https://drive.google.com/file/d/1sNutd4JV-3kDnlvEGAlFz0Dze7BlcE7U/view?usp=sharing", 
 };
 
 export const socials = [
