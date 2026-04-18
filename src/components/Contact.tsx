@@ -15,6 +15,14 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formState.email)) {
+      setError('Please enter a valid email address.');
+      return;
+    }
+
     console.log('Submitting form data:', formState);
     setIsSubmitting(true);
     setError(null);
