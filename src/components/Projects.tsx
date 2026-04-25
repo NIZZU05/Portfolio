@@ -39,8 +39,8 @@ const Projects = () => {
                   />
                   <div className="absolute inset-0 bg-accent/80 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center gap-4 p-4">
                     <span className="bg-white text-accent px-6 py-2 rounded-full font-bold mb-2">View Details</span>
-                    {!project.hideLinks && (
-                      <div className="flex gap-3" onClick={(e) => e.stopPropagation()}>
+                    <div className="flex gap-3" onClick={(e) => e.stopPropagation()}>
+                      {project.githubUrl !== '#' && (
                         <a
                           href={project.githubUrl}
                           target="_blank"
@@ -50,6 +50,8 @@ const Projects = () => {
                         >
                           <Github size={20} />
                         </a>
+                      )}
+                      {project.liveUrl !== '#' && (
                         <a
                           href={project.liveUrl}
                           target="_blank"
@@ -59,8 +61,8 @@ const Projects = () => {
                         >
                           <ExternalLink size={20} />
                         </a>
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
                 </div>
                 <div className="p-6">
@@ -132,8 +134,8 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  {!selectedProject.hideLinks && (
-                    <div className="flex gap-4">
+                  <div className="flex gap-4">
+                    {selectedProject.githubUrl !== '#' && (
                       <a
                         href={selectedProject.githubUrl}
                         target="_blank"
@@ -143,6 +145,8 @@ const Projects = () => {
                         <Github size={20} />
                         GitHub
                       </a>
+                    )}
+                    {selectedProject.liveUrl !== '#' && (
                       <a
                         href={selectedProject.liveUrl}
                         target="_blank"
@@ -152,8 +156,8 @@ const Projects = () => {
                         <ExternalLink size={20} />
                         Live Demo
                       </a>
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </div>
               </div>
             </motion.div>

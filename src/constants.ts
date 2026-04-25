@@ -74,7 +74,12 @@ export const skills = [
   { name: "TensorFlow", icon: BrainCircuit },
   { name: "Keras", icon: BrainCircuit },
   { name: "IoT Systems", icon: Cpu },
+  { name: "Machine Learning", icon: BrainCircuit },
+  { name: "Backend Development", icon: Terminal },
+  { name: "Frontend Development", icon: Globe },
+  { name: "REST APIs", icon: Globe },
   { name: "Data Processing", icon: BarChart3 },
+  { name: "Arduino IDE", icon: Cpu },
   { name: "MongoDB", icon: Database },
   { name: "Firebase", icon: Database },
   { name: "Supabase", icon: Database },
@@ -82,33 +87,31 @@ export const skills = [
 
 export const projects = [
   {
+    title: "IoT-Based Cold Storage Monitoring",
+    description: "Developed an IoT-based warehouse monitoring system for Ice City Refrigeration to track electrical and environmental parameters in real time. Built cloud-based logging using Google Sheets API / Firebase for real-time data tracking.",
+    tags: ["IoT", "ESP32", "Firebase", "PZEM-004T"],
+    thumbnailUrl: "https://lh3.googleusercontent.com/d/1fiIHYmGV1hS6Dvz3ODNCTogCFiyabmtK",
+    githubUrl: "https://github.com/NIZZU05",
+    liveUrl: "#",
+    category: "IoT",
+  },
+  {
     title: "WiFi-Enabled Real-Time ADC Monitoring",
-    description: "A portable real-time signal monitoring system using ESP32 with built-in 12-bit ADC. Features WebSocket-based data streaming for low-latency communication and a browser-based dashboard for live visualization. Research findings and system architecture are documented in an upcoming IEEE conference paper (Publication Pending).",
+    description: "Designed a portable real-time signal monitoring system using ESP32 with built-in 12-bit ADC. Features WebSocket-based data streaming and a browser-based dashboard for live waveform visualization.",
     tags: ["ESP32", "WebSockets", "Chart.js", "C++"],
     thumbnailUrl: "https://lh3.googleusercontent.com/d/1-BgJZ8yEB0Xo9t9zRWp-GAnX1Y-CWUhc",
     githubUrl: "https://github.com/NIZZU05",
     liveUrl: "#",
     category: "IoT",
-    hideLinks: true,
   },
   {
     title: "Cervical Cancer Prediction Model",
-    description: "Built a predictive machine learning model for cervical cancer detection using structured healthcare datasets. Achieved 88% accuracy using supervised learning algorithms.",
-    tags: ["ML", "Python", "TensorFlow", "Scikit-Learn"],
+    description: "Built a predictive machine learning model for cervical cancer detection using structured healthcare datasets. Achieved 88% accuracy using supervised learning (SVM, Logistic Regression).",
+    tags: ["ML", "Python", "Scikit-Learn", "Healthcare"],
     thumbnailUrl: "https://lh3.googleusercontent.com/d/1qvQCPU53TubXSFu_mJaKc0ATJ8swMwel",
     githubUrl: "https://github.com/NIZZU05",
-    liveUrl: "https://colab.research.google.com/drive/1imuF-sQKZ05RB8PCYYB_8qqtMsCrUI_9#scrollTo=1de8d154",
+    liveUrl: "https://colab.research.google.com/drive/1imuF-sQKZ05RB8PCYYB_8qqtMsCrUI_9",
     category: "AI/ML",
-  },
-  {
-    title: "Warehouse Monitoring System",
-    description: "Developed an IoT-based warehouse monitoring system for Ice City Refrigeration to track electrical and environmental parameters in real time. This industrial-grade solution integrates sensor networks with cloud data logging. A research paper detailing the implementation and data analysis is set for IEEE publication soon.",
-    tags: ["IoT", "Data Visualization", "Sensors"],
-    thumbnailUrl: "https://lh3.googleusercontent.com/d/1fiIHYmGV1hS6Dvz3ODNCTogCFiyabmtK",
-    githubUrl: "https://github.com/NIZZU05",
-    liveUrl: "#",
-    category: "IoT + Web",
-    hideLinks: true,
   }
 ];
 
@@ -118,15 +121,15 @@ export const experience = [
     company: "Universiti Malaysia Perlis (UniMAP)",
     period: "Oct 2025 - Mar 2026",
     description: [
-      "Developed an IoT-based warehouse monitoring system for Ice City Refrigeration.",
-      "Designed and implemented a WiFi-enabled real-time ADC monitoring system using ESP32.",
-      "Performed data preprocessing, system validation, and integration for industrial applications.",
-      "Collaborated with academic researchers and industry stakeholders at AdvComp."
+      "Developed an IoT-based warehouse monitoring system for Ice City Refrigeration to track electrical and environmental parameters.",
+      "Designed and implemented a WiFi-enabled real-time ADC monitoring system using ESP32 with WebSocket streaming.",
+      "Performed data preprocessing, system validation, and integration for real-world industrial applications.",
+      "Collaborated with industry stakeholders and academic researchers at AdvComp on system design."
     ],
   },
   {
     role: "Intern - Computer Hardware & Networking",
-    company: "Vectra Technosoft Pvt. Ltd.",
+    company: "Vectra Technosoft Pvt. Ltd., Chennai",
     period: "Jul 2022",
     description: [
       "Completed hands-on internship in hardware service and networking fundamentals.",
