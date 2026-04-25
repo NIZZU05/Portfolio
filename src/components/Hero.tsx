@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Download, ChevronDown } from 'lucide-react';
+import { FileText, ChevronDown } from 'lucide-react';
 import { personalInfo, socials } from '../constants';
 import { useTypingEffect } from '../hooks/useTypingEffect';
 
@@ -48,8 +48,8 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               className="flex items-center space-x-2 bg-accent text-accent-foreground px-8 py-4 rounded-full font-bold shadow-lg shadow-accent/20 transition-all hover:shadow-accent/40 glass-hover"
             >
-              <Download size={20} />
-              <span>Download Resume</span>
+              <FileText size={20} />
+              <span>View Resume</span>
             </motion.a>
             <div className="flex items-center space-x-4">
               {socials.map((social, i) => (
