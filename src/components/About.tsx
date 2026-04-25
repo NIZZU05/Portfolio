@@ -53,6 +53,20 @@ const About = () => {
                 ))}
               </div>
             </div>
+
+            <div className="mt-10">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-accent mb-6">
+                LANGUAGES
+              </h3>
+              <div className="flex flex-wrap gap-4">
+                {['English', 'Tamil', 'Hindi', 'Urdu'].map((lang) => (
+                  <div key={lang} className="flex items-center gap-2 text-foreground/70 font-medium">
+                    <div className="w-1.5 h-1.5 rounded-full bg-accent" />
+                    {lang}
+                  </div>
+                ))}
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

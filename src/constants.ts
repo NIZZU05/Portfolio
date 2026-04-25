@@ -25,9 +25,25 @@ export const personalInfo = {
   tagline: "I don't code - I build complete working systems",
   about: "Computer Science undergraduate specializing in Machine Learning, IoT systems, and full-stack development. Experienced in developing real-time monitoring systems, predictive models, and scalable backend applications using Python, Node.js, and cloud-integrated databases. Currently a Research Intern at Universiti Malaysia Perlis (UniMAP), contributing to data-driven system design and applied research.",
   photoUrl: "https://lh3.googleusercontent.com/d/1RBcASW0vYhnZX8vLVra8uw4hhmSSKGDJ", // User's uploaded photo
-  email: "nizzukhan5049@gmail.com",
+  email: "nizamkhan5049@gmail.com",
+  phone: "+91 63809 28108",
   resumeUrl: "https://drive.google.com/uc?export=download&id=1ibgBYOmQ08W14_Q5EhDJICr7Y0YplpVV", 
 };
+
+export const education = [
+  {
+    degree: "B.Tech in Computer Science Engineering",
+    institution: "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology",
+    period: "Jun 2023 – May 2026",
+    grade: "CGPA: 8.4 (Current)",
+  },
+  {
+    degree: "Diploma in Computer Science Engineering",
+    institution: "Panimalar Polytechnic College",
+    period: "Jun 2020 – May 2023",
+    grade: "CGPA: 9.1",
+  }
+];
 
 export const socials = [
   {

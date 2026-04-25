@@ -87,6 +87,15 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-4">
                 <div className="p-4 rounded-2xl glass text-accent">
+                  <Phone size={24} />
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-foreground/40">Call Me</p>
+                  <p className="font-medium">{personalInfo.phone}</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="p-4 rounded-2xl glass text-accent">
                   <MapPin size={24} />
                 </div>
                 <div>
