@@ -14,25 +14,28 @@ html {
   --font-display: "Space Grotesk", sans-serif;
   
   --color-background: #ffffff;
-  --color-foreground: #0c0c0c;
+  --color-foreground: #000000;
   
-  --color-accent: #8b5cf6;
+  --color-accent: #000000;
   --color-accent-foreground: #ffffff;
 
-  --color-card: rgba(255, 255, 255, 0.7);
-  --color-card-foreground: #0c0c0c;
+  --color-card: rgba(255, 255, 255, 0.85);
+  --color-card-foreground: #000000;
   
-  --color-border: rgba(0, 0, 0, 0.1);
+  --color-border: rgba(0, 0, 0, 0.12);
 }
 
 .dark {
-  --color-background: #0c0c0c;
+  --color-background: #090915;
   --color-foreground: #f5f5f5;
   
-  --color-card: rgba(20, 20, 20, 0.7);
+  --color-accent: #8b5cf6;
+  --color-accent-foreground: #ffffff;
+  
+  --color-card: rgba(18, 18, 30, 0.75);
   --color-card-foreground: #f5f5f5;
   
-  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border: rgba(255, 255, 255, 0.08);
 }
 
 @layer base {
@@ -55,7 +58,7 @@ html {
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-purple-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-neutral-500 dark:from-accent dark:to-purple-400;
   }
 }
 

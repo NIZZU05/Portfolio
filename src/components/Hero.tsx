@@ -11,7 +11,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
       {/* Background Blobs */}
       <div className="absolute top-1/4 -left-20 w-72 h-72 bg-accent/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-700" />
+      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-700" />
 
       <div className="container mx-auto px-6 relative z-10 text-center">
         <motion.div
@@ -46,11 +46,24 @@ const Hero = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="flex items-center space-x-2 bg-accent text-accent-foreground px-8 py-4 rounded-full font-bold shadow-lg shadow-accent/20 transition-all hover:shadow-accent/40 glass-hover"
+              className="flex items-center space-x-2 bg-accent text-accent-foreground px-8 py-4 rounded-full font-bold shadow-lg shadow-accent/25 transition-all hover:shadow-accent/40 glass-hover"
             >
               <FileText size={20} />
               <span>View Resume</span>
             </motion.a>
+            {personalInfo.cvUrl && (
+              <motion.a
+                href={personalInfo.cvUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="flex items-center space-x-2 bg-foreground/5 hover:bg-foreground/10 text-foreground px-8 py-4 rounded-full font-bold transition-all border border-foreground/10 shadow-lg shadow-black/5"
+              >
+                <FileText size={20} />
+                <span>View CV</span>
+              </motion.a>
+            )}
             <div className="flex items-center space-x-4">
               {socials.map((social, i) => (
                 <motion.a
