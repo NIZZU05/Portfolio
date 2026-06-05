@@ -22,7 +22,7 @@ const Hero = () => {
           <span className="inline-block py-1 px-3 rounded-full bg-accent/10 text-accent text-xs font-bold tracking-widest uppercase mb-6">
             Available for Projects
           </span>
-          <h1 className="text-5xl md:text-8xl font-extrabold tracking-tight mb-4 font-display">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-4 font-display whitespace-nowrap">
             I'm <span className="text-gradient">{personalInfo.name}</span>
           </h1>
           <h2 className="text-xl md:text-3xl font-medium text-foreground/70 mb-8 max-w-2xl mx-auto min-h-[1.5em]">

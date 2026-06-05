@@ -39,7 +39,7 @@ export const education = [
     degree: "B.Tech in Computer Science Engineering",
     institution: "Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology",
     period: "Jun 2023 – May 2026",
-    grade: "CGPA: 8.45 (Current)",
+    grade: "CGPA: 8.31 (Current)",
   },
   {
     degree: "Diploma in Computer Science Engineering",
