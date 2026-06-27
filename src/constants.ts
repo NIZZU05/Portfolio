@@ -30,7 +30,7 @@ export const personalInfo = {
   photoUrl: "https://lh3.googleusercontent.com/d/1RBcASW0vYhnZX8vLVra8uw4hhmSSKGDJ", // User's uploaded photo
   email: "nizamkhan5049@gmail.com",
   phone: "+91 63809 28108",
-  resumeUrl: "https://drive.google.com/file/d/14Gj7LS89D7eSbsn5W4hcAN1RsMQAnjBP/view?usp=sharing", 
+  resumeUrl: "https://drive.google.com/file/d/1ClSXoHxPz2774yR7JiWCz-nXXKjCTAGn/view?usp=drivesdk", 
   cvUrl: "https://drive.google.com/file/d/1Tn7ZAuN7OS_vFQ-PVfBCghJ-GOYRPTXu/view?usp=sharing",
 };
 
