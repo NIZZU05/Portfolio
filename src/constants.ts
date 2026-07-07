@@ -179,9 +179,30 @@ export const projects = [
 
 export const experience = [
   {
+    role: "AI Engineer (Freelancer)",
+    company: "Drytis",
+    period: "Jul 2026 - Present",
+    description: [
+      "Working as a freelance AI Engineer and independent contractor on an as-needed basis, delivering timely bug fixes and feature improvements.",
+      "Supporting AI integration tasks and maintaining reliable, production-ready performance for client-facing systems.",
+      "Communicating directly with the client, building projects, fixing bugs, and providing microservices."
+    ],
+  },
+  {
+    role: "Web Application Developer (Freelancer)",
+    company: "Nexus AI Algo",
+    period: "Mar 2026 - May 2026",
+    description: [
+      "Developed a landing page and a full-stack AI web application — Nexus AI — over a 4-month freelance engagement.",
+      "Built a unified dashboard enabling users to interact with multiple AI tools; implemented secure auth, API integration, and real-time data processing.",
+      "Designed scalable backend architecture with database integration for user management, session handling, and data persistence.",
+      "Deployed on cloud hosting with performance optimization and continuous updates post-launch."
+    ],
+  },
+  {
     role: "Research Intern",
     company: "Universiti Malaysia Perlis (UniMAP)",
-    period: "Oct 2025 - Mar 2026",
+    period: "Oct 2025 - Feb 2026",
     description: [
       "Developed an IoT-based warehouse monitoring system for Ice City Refrigeration to track electrical and environmental parameters.",
       "Designed and implemented a WiFi-enabled real-time ADC monitoring system using ESP32 with WebSocket streaming.",
@@ -239,6 +260,72 @@ export const credentials = [
     url: "https://drive.google.com/file/d/14tfvKvrpIkGbhTsH35ukUhFerKaPwvzu/view?usp=drive_link",
     type: "Award",
     id: "VelTech-A"
+  }
+];
+
+export const certifications = [
+  {
+    title: "Research Intern",
+    issuer: "Ministry of Education, Govt. of India",
+    date: "2024",
+    url: "https://drive.google.com/file/d/1Pk-wkV2Bh96JfZOoTDqeTVmjFqk9DAz7/view?usp=drivesdk",
+    isImportant: true,
+  },
+  {
+    title: "Getting Started With Arduino UNO",
+    issuer: "Google Cloud",
+    date: "2025",
+    url: "https://drive.google.com/file/d/1EuLvRhfAXyxJeesmXLK_JBtGCApZ55St/view?usp=drivesdk",
+    isImportant: false,
+  },
+  {
+    title: "Ensemble Machine Learning Techniques",
+    issuer: "DeepLearning.AI / Coursera",
+    date: "2024",
+    url: "https://drive.google.com/file/d/1o_Kr_K0Krww597y-3KLdcnkwU3zQjNkN/view?usp=drivesdk",
+    isImportant: false,
+  },
+  {
+    title: "Building ArcGIS Cross-Platform Applications with JavaScript",
+    issuer: "DeepLearning.AI",
+    date: "2025",
+    url: "https://drive.google.com/file/d/1ROpTXOuDVmjnbnjx2aYoUFngdIGNEhKs/view?usp=drivesdk",
+    isImportant: false,
+  },
+  {
+    title: "PCAP: Programming Essentials in Python",
+    issuer: "Jovian / Vel Tech",
+    date: "2024",
+    url: "https://drive.google.com/file/d/1IiirklET91uTwUyyl-VdQWkC7I3yDF92/view?usp=drivesdk",
+    isImportant: false,
+  },
+  {
+    title: "Java Programming Fundamentals",
+    issuer: "Universiti Malaysia Perlis (UniMAP)",
+    date: "2025",
+    url: "https://drive.google.com/file/d/1SrLHFCWbn2MC1BDm88mHqBaODfWbM7Ud/view?usp=drivesdk",
+    isImportant: false,
+  },
+  {
+    title: "Explore Automation Development with UiPath Studio",
+    issuer: "Udemy",
+    date: "2024",
+    url: "https://drive.google.com/file/d/1iSz9enytTJtImy70d9MQpdDwxdBmMbGj/view?usp=drivesdk",
+    isImportant: false,
+  },
+  {
+    title: "PROGRAMMING SKILLS IN C ",
+    issuer: "NPTEL / IIT",
+    date: "2023",
+    url: "https://drive.google.com/file/d/1BsvztcL9rkDQxnLzudRgKdwW8Wh2ilmH/view?usp=drivesdk",
+    isImportant: false,
+  },
+  {
+    title: "Python for Beginners: Learn Python Programming (Python 3)",
+    issuer: "Vel Tech Institute",
+    date: "2024",
+    url: "https://drive.google.com/file/d/14oUjbODh_6Yh6ua-_gDmoE7hJ65_JWbR/view?usp=drivesdk",
+    isImportant: false,
   }
 ];
 
