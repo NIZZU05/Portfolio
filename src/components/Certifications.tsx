@@ -23,8 +23,20 @@ const Certifications = () => {
     return url;
   };
 
-  // Duplicate certifications to create a seamless infinite loop
+  // Duplicated certifications to create a seamless infinite loop
   const doubledCertifications = [...certifications, ...certifications];
+
+  // Start scroll at a middle offset so dragging has plenty of room in both directions
+  useEffect(() => {
+    const container = containerRef.current;
+    if (container) {
+      setTimeout(() => {
+        const halfWidth = container.scrollWidth / 2;
+        // Scroll to the first instance's beginning
+        container.scrollLeft = halfWidth / 2;
+      }, 150);
+    }
+  }, []);
 
   // Auto-scrolling interval using requestAnimationFrame for pristine smoothness
   useEffect(() => {
@@ -53,6 +65,7 @@ const Certifications = () => {
 
   // Handle continuous wrap-around for manual/touch scrolls too
   const handleScroll = () => {
+    if (isDragging) return; // Prevent bounds corrections while user is dragging (prevents flickering/jumping)
     const container = containerRef.current;
     if (!container) return;
     const halfWidth = container.scrollWidth / 2;
