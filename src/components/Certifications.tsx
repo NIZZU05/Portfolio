@@ -67,6 +67,7 @@ const Certifications = () => {
   const handleMouseDown = (e: React.MouseEvent) => {
     const container = containerRef.current;
     if (!container) return;
+    setIsPaused(true);
     setIsDragging(true);
     startX.current = e.pageX - container.offsetLeft;
     scrollLeft.current = container.scrollLeft;
@@ -86,11 +87,40 @@ const Certifications = () => {
 
   const handleMouseUpOrLeave = () => {
     setIsDragging(false);
+    setIsPaused(false);
+  };
+
+  // Touch Drag to Scroll Helpers
+  const handleTouchStart = (e: React.TouchEvent) => {
+    const container = containerRef.current;
+    if (!container) return;
+    setIsPaused(true);
+    setIsDragging(true);
+    const touch = e.touches[0];
+    startX.current = touch.pageX - container.offsetLeft;
+    scrollLeft.current = container.scrollLeft;
+    dragDistance.current = 0;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging) return;
+    const container = containerRef.current;
+    if (!container) return;
+    const touch = e.touches[0];
+    const x = touch.pageX - container.offsetLeft;
+    const walk = (x - startX.current) * 1.5; // multiplier for drag sensitivity
+    dragDistance.current = Math.abs(x - startX.current);
+    container.scrollLeft = scrollLeft.current - walk;
+  };
+
+  const handleTouchEnd = () => {
+    setIsDragging(false);
+    setIsPaused(false);
   };
 
   // Card click handler distinguishing tap/click from slide drags
   const handleCardClick = (index: number) => {
-    if (dragDistance.current > 5) return;
+    if (dragDistance.current > 15) return;
     setActiveCertIndex(index % certifications.length);
   };
 
@@ -170,13 +200,15 @@ const Certifications = () => {
 
         <div 
           ref={containerRef}
-          className="overflow-x-auto flex gap-6 px-16 py-4 cursor-grab active:cursor-grabbing [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] select-none"
+          className="overflow-x-auto flex gap-6 px-16 py-4 cursor-grab active:cursor-grabbing [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] select-none touch-pan-y"
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
           onMouseUp={handleMouseUpOrLeave}
           onMouseLeave={handleMouseUpOrLeave}
-          onTouchStart={() => setIsPaused(true)}
-          onTouchEnd={() => setIsPaused(false)}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          onTouchCancel={handleTouchEnd}
           onScroll={handleScroll}
         >
           {doubledCertifications.map((cert, index) => (
